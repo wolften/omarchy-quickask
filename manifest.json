@@ -2,17 +2,17 @@
   "schemaVersion": 1,
   "id": "wolften.quickask",
   "name": "Quick Ask",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "author": "wolften",
   "license": "MIT",
-  "description": "Perguntas rápidas ao agente padrão do sistema (omarchy-default-agent) direto da barra, com histórico e nova sessão.",
+  "description": "Quick questions to the system default agent: centered Spotlight-style overlay, input focused on open, history, and new session.",
   "kinds": ["bar-widget"],
   "entryPoints": {
     "barWidget": "BarWidget.qml"
   },
   "barWidget": {
     "displayName": "Quick Ask",
-    "description": "Campo de pergunta rápida para o agente padrão com botão de nova conversa",
+    "description": "Centered overlay for the default agent, with new conversation and open-in-terminal",
     "category": "AI",
     "allowMultiple": false,
     "defaultSection": "right"

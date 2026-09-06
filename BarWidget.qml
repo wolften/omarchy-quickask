@@ -4,8 +4,8 @@ import Quickshell.Io
 import qs.Commons
 import qs.Ui
 
-// Bar icon for Quick Ask: click opens a small chat popup bound to the
-// system's default agent (omarchy-default-agent).
+// Bar icon for Quick Ask: click (or SUPER+SHIFT+A) opens a centered
+// Spotlight-style overlay bound to the system's default agent.
 BarWidget {
   id: root
   moduleName: "wolften.quickask"

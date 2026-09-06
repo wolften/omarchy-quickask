@@ -1,8 +1,10 @@
 # omarchy-quickask
 
-Quick Ask: perguntas rápidas ao agente padrão do Omarchy direto da barra superior.
+Quick Ask: a Spotlight-style overlay for one-shot questions to Omarchy's default agent.
 
-Clique no ícone para abrir um popup de chat: digite, Enter envia, a resposta transmite em streaming. `+` inicia nova conversa, o outro botão abre o agente no terminal. Respeita `~/.config/omarchy/defaults/agent` (opencode, claude, gemini, codex, crush, copilot, pi, omp, grok).
+The shortcut (or the bar icon) opens a card in the center of the screen with the text field already focused. Type, Enter sends, and the answer streams in. Conversation grows below the input. `+` starts a new chat; the other button opens the agent in a terminal. Esc or a click outside closes it.
+
+Uses `~/.config/omarchy/defaults/agent` (opencode, claude, gemini, codex, crush, copilot, pi, omp, grok).
 
 ## Install
 
@@ -10,13 +12,13 @@ Clique no ícone para abrir um popup de chat: digite, Enter envia, a resposta tr
 omarchy plugin add https://github.com/wolften/omarchy-quickask --enable
 ```
 
-Depois adicione à barra (`~/.config/omarchy/shell.json`, seção `right`):
+Then add it to the bar (`~/.config/omarchy/shell.json`, `right` section):
 
 ```json
 { "id": "wolften.quickask" }
 ```
 
-Opcional: atalho `SUPER + SHIFT + A` em `~/.config/hypr/bindings.lua`:
+Optional: `SUPER + SHIFT + A` in `~/.config/hypr/bindings.lua`:
 
 ```lua
 hl.unbind("SUPER + SHIFT + A")
@@ -28,3 +30,7 @@ o.bind("SUPER + SHIFT + A", "Quick Ask", "omarchy-shell shell toggle wolften.qui
 ```bash
 node --test tests/model.test.js
 ```
+
+## License
+
+MIT. See [LICENSE](LICENSE).
